@@ -1,0 +1,153 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartTech | Consulta tu reparación</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <section class="tarjeta">
+
+            <div class="logo">
+                <div class="logo-icono">S</div>
+
+                <div>
+                    <h1>SMARTTECH</h1>
+                    <span>Servicio técnico</span>
+                </div>
+            </div>
+
+            <div class="encabezado">
+                <h2>Consulta tu reparación</h2>
+
+                <p>
+                    Ingresa el folio de tu orden para consultar
+                    el estado de tu equipo.
+                </p>
+            </div>
+
+            <div class="formulario">
+
+                <label for="folio">Número de folio</label>
+
+                <input
+                    type="text"
+                    id="folio"
+                    placeholder="Ej. ST-000123"
+                    autocomplete="off"
+                >
+
+                <button onclick="consultarOrden()">
+                    Consultar reparación
+                </button>
+
+            </div>
+
+            <div id="mensaje" class="mensaje"></div>
+
+        </section>
+
+        <section id="resultado" class="resultado oculto">
+
+            <div class="resultado-header">
+                <div>
+                    <span class="etiqueta">ORDEN DE SERVICIO</span>
+                    <h2 id="folioResultado">ST-000123</h2>
+                </div>
+
+                <span id="estado" class="estado">
+                    En proceso
+                </span>
+            </div>
+
+            <div class="datos">
+
+                <div class="dato">
+                    <span>Cliente</span>
+                    <strong id="cliente">Cliente</strong>
+                </div>
+
+                <div class="dato">
+                    <span>Equipo</span>
+                    <strong id="equipo">Equipo</strong>
+                </div>
+
+                <div class="dato">
+                    <span>Falla reportada</span>
+                    <strong id="falla">---</strong>
+                </div>
+
+                <div class="dato">
+                    <span>Diagnóstico</span>
+                    <strong id="diagnostico">---</strong>
+                </div>
+
+            </div>
+
+            <div class="costos">
+
+                <div>
+                    <span>Costo</span>
+                    <strong id="costo">$0.00</strong>
+                </div>
+
+                <div>
+                    <span>Anticipo</span>
+                    <strong id="anticipo">$0.00</strong>
+                </div>
+
+                <div>
+                    <span>Saldo</span>
+                    <strong id="saldo">$0.00</strong>
+                </div>
+
+            </div>
+
+            <div class="fechas">
+
+                <div>
+                    <span>Fecha de recepción</span>
+                    <strong id="fechaIngreso">---</strong>
+                </div>
+
+                <div>
+                    <span>Fecha de entrega</span>
+                    <strong id="fechaEntrega">Pendiente</strong>
+                </div>
+
+            </div>
+
+            <div class="nota">
+                <strong>¿Necesitas ayuda?</strong>
+
+                <p>
+                    Si tienes alguna duda sobre tu reparación,
+                    comunícate con nosotros.
+                </p>
+
+                <button class="whatsapp">
+                    Contactar por WhatsApp
+                </button>
+            </div>
+
+        </section>
+
+        <footer>
+            © SmartTech · Servicio técnico
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
